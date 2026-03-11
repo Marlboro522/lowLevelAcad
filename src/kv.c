@@ -48,6 +48,7 @@ int kv_put(kv_t *db, const char *key, const char *value) {
       if(!newval)
         return -1;
       entry->value = newval;
+      printf("%zu", r_id);
       return r_id;
     }
     // right after it
@@ -63,6 +64,7 @@ int kv_put(kv_t *db, const char *key, const char *value) {
       entry->key = newkey;
       entry->value = newval;
       db->count++;
+      printf("%zu", r_id);
       return r_id;
     }
     
