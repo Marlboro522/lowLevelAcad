@@ -15,3 +15,20 @@ kv_t *kv_init(size_t capacity) {
   }
   return table;
 }
+
+int kv_put(kv_t *db, const char *key, const char *value){
+  printf("Nothing for now\n");
+  return 0;
+}
+char *kv_get(kv_t *db, const char *key){
+  printf("Nothing for now\n");
+  return 0;
+}
+int kv_delete(kv_t *db, const char *key){
+  printf("Nothing for now\n");
+  return 0;
+}
+void kv_free(kv_t *db){
+  printf("Nothing for now\n");
+  return 0;
+}
